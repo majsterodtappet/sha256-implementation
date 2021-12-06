@@ -7,14 +7,14 @@ hash_types = ('sha256', 'sha224', 'sha512')
 #hash_types = ('sha512', 'md4', 'sha384', 'sha3_384', 'sha512_256', 'whirlpool', 'md5-sha1', 'ripemd160', 'shake_128', 'sha512_224', 'sha256', 'sha3_224', 'blake2b', 'mdc2', 'blake2s', 'sm3', 'md5', 'sha3_512', 'sha224', 'shake_256', 'sha1', 'sha3_256') #wszystkie dostępne w bibliotece
 
 root = Tk()
-root.title('Weronika Nowak 111654')
+root.title('Encryption')
 root.resizable(False,False)
 root.geometry("750x230")
 root.iconbitmap("lock.ico")
 
 root.frame_header = ttk.Frame()
 
-ttk.Label(root.frame_header, text = f'Wybierz algorytm:', style = 'Header.TLabel').grid(row = 1, column = 0, sticky=W)
+ttk.Label(root.frame_header, text = f'Choose hash:', style = 'Header.TLabel').grid(row = 1, column = 0, sticky=W)
 ttk.Label(root.frame_header, text = 'Input:', style = 'Header.TLabel').grid(row = 3, column = 0, sticky=W)
 ttk.Label(root.frame_header, text='Hash Value:',style='Header.TLabel').grid(row=4, column=0, sticky=W)
 ttk.Label(root.frame_header, text='Hexadecimal:',style='Header.TLabel').grid(row=5, column=0, sticky=W)
@@ -72,8 +72,8 @@ def clear_text():
     digest_output.delete(0, END)
     block_output.delete(0, END)
 
-encrypt_button = ttk.Button(root.frame_header, text='Szyfruj',command = lambda: encrypt_text()).grid(row=10,column=1, sticky =W)
-clear_button = ttk.Button(root.frame_header,text='Wyczyść',command = lambda: clear_text()).grid(row=10,column=1, sticky=E)
+encrypt_button = ttk.Button(root.frame_header, text='Encrypt',command = lambda: encrypt_text()).grid(row=10,column=1, sticky =W)
+clear_button = ttk.Button(root.frame_header,text='Clear all',command = lambda: clear_text()).grid(row=10,column=1, sticky=E)
 
 root.frame_header.pack()
 root.mainloop()
