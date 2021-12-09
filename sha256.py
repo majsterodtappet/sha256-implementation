@@ -4,7 +4,7 @@ import tkinter as tk
 import hashlib
 
 hash_types = ('sha256', 'sha224', 'sha512')
-#hash_types = ('sha512', 'md4', 'sha384', 'sha3_384', 'sha512_256', 'whirlpool', 'md5-sha1', 'ripemd160', 'shake_128', 'sha512_224', 'sha256', 'sha3_224', 'blake2b', 'mdc2', 'blake2s', 'sm3', 'md5', 'sha3_512', 'sha224', 'shake_256', 'sha1', 'sha3_256') #wszystkie dostępne w bibliotece
+#hash_types = ('sha512', 'md4', 'sha384', 'sha3_384', 'sha512_256', 'whirlpool', 'md5-sha1', 'ripemd160', 'shake_128', 'sha512_224', 'sha256', 'sha3_224', 'blake2b', 'mdc2', 'blake2s', 'sm3', 'md5', 'sha3_512', 'sha224', 'shake_256', 'sha1', 'sha3_256') #all available hashes in hashlib
 
 root = Tk()
 root.title('Encryption')
@@ -26,7 +26,7 @@ ttk.Label(root.frame_header, text='‎',style='Header.TLabel').grid(row=0,column
 ttk.Label(root.frame_header, text='‎',style='Header.TLabel').grid(row=2,column=1)
 
 options = tk.StringVar()
-options.trace_add('write', lambda *args: print(options.get()))
+options.trace_add('write', lambda *args: options.get())
 OptionMenu(root.frame_header, options, *hash_types).grid(row=1, column=1, sticky=W)
 
 text_entry = ttk.Entry(root.frame_header, width=100)
