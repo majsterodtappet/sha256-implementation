@@ -1,5 +1,5 @@
 # sha256-implementation
-Using hashlib to encrypt text with GUI
+sha256 encrypting implementation using hashlib with GUI
 
 # INSTALLATION
 Install tkinter packages
