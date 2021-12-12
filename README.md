@@ -1,6 +1,6 @@
 # sha256-implementation
 sha256 encrypting implementation using hashlib with GUI
 
-# INSTALLATION
-Install tkinter packages
+# Dependencies
+Install tkinter
 ```pip install tk```
