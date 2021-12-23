@@ -2,7 +2,7 @@
 sha256 encrypting implementation using hashlib with GUI
 
 ## Dependencies
-Install tkinter
+Install tkinter (GUI Packages)
 ```
 # Linux/macOS
 python3 -m pip install tk
