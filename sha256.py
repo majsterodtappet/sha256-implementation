@@ -76,4 +76,4 @@ encrypt_button = ttk.Button(root.frame_header, text='Encrypt',command = lambda: 
 clear_button = ttk.Button(root.frame_header,text='Clear all',command = lambda: clear_text()).grid(row=10,column=1, sticky=E)
 
 root.frame_header.pack()
-root.mainloop()
+root.mainloop() 
